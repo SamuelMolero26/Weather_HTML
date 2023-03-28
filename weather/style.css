@@ -1,0 +1,81 @@
+                body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                    font-family: 'Open Sans', sans-serif;
+                    background: #333;
+                    background-image: url("https://source.unsplash.com/1980x1080/?landscape,city,night");
+                    font-size: 105%;
+                }
+                
+                .card {
+                    background: #000000d0;
+                    color: white;
+                    padding: 2em;
+                    border-radius: 30px;
+                    width: 100%;
+                    max-width: 420px;
+                }
+                
+                .search {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                input.search-bar {
+                    border: none;
+                    outline: none;
+                    padding: 0.4em 1em;
+                    border-radius: 18px;
+                    background: #7c7c7c2b;
+                    color: white;
+                    font-size: 100%;
+                    font-family: inherit;
+                }
+                
+                button {
+                    margin: 0.5em;
+                    border-radius: 50%;
+                    border: none;
+                    height: 36px;
+                    width: 36px;
+                    outline: none;
+                    background: #7c7c7c2b;
+                    cursor: pointer;
+                    transition: 0.2s ease-in-out;
+                }
+                
+                button:hover {
+                    background: #7c7c7c6b;
+                }
+                
+                h1.temp {
+                    margin: 0;
+                    margin-bottom: 0.2em;
+                }
+                
+                .flex {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .description {
+                    text-transform: capitalize;
+                    margin-left: 8px;
+                }
+                
+                .weather.loading {
+                    visibility: hidden;
+                    max-height: 20px;
+                    position: relative;
+                }
+                
+                .weather.loading:after {
+                    visibility: visible;
+                    content: "Loading....";
+                    color: white;
+                    position: absolute;
+                }
